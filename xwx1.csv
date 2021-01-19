@@ -1,0 +1,2 @@
+﻿Id,title,,content,owner,date
+0,pytthon.currentdir,,currentdir = os.path.dirname(os.path.realpath(__file__)),davood abbaspour hasanloue,1/19/2021
