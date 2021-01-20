@@ -1,3 +1,4 @@
 import os
 currentdir = os.path.dirname(os.path.realpath(__file__))
 s="dawood abbaspour"
+print(s)
