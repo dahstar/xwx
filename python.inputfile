@@ -1,0 +1,10 @@
+#sample code for redirect  input from terminal to file on python
+#xwx.readme
+#-------------
+#inputfile="a.in"
+#xwx.python.infutfile
+#--------------------
+import sys
+import os 
+xwx.python.currentdir
+sys.stdin = open(currentdir+"\\"+inputfile, 'r')
