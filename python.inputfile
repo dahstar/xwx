@@ -6,5 +6,5 @@
 #--------------------
 import sys
 import os 
-xwx.python.currentdir
+currentdir = os.path.dirname(os.path.realpath(__file__))
 sys.stdin = open(currentdir+"\\"+inputfile, 'r')
