@@ -2,4 +2,4 @@ import sys
 import os
  
 currentdir = os.path.dirname(os.path.realpath(__file__))
-open(currentdir+"\\"+inputfile, 'r')
+sys.stdout=open(currentdir+"\\"+inputfile, 'r')
