@@ -3,7 +3,7 @@ import os
 import sys
 #outputfile = 'a.out'
 currentdir = os.path.dirname(os.path.realpath(__file__))
-sys.stdin = open(currentdir + "\\" + outputfile, 'r')
+sys.stdout = open(currentdir + "\\" + outputfile, 'r')
 ln=input()
 books = set()
 
