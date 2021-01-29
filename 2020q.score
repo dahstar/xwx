@@ -1,9 +1,9 @@
-#find score google hashcode 2020 
+#find score google hashcode 2020 qualification round book  
 import os
 import sys
-#outputfile = 'a.out'
+#inputfile = 'a.out'
 currentdir = os.path.dirname(os.path.realpath(__file__))
-sys.stdout = open(currentdir + "\\" + outputfile, 'r')
+sys.stdin = open(currentdir + "\\" + inputfile, 'r')
 ln=input()
 books = set()
 
@@ -13,3 +13,4 @@ for i in range(0,int(ln)):
     for x in bookid:
             books.add(int(x))
 score=sum(books)
+
