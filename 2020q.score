@@ -1,0 +1,15 @@
+#find score google hashcode 2020 
+import os
+import sys
+#inputfile = 'a.out'
+currentdir = os.path.dirname(os.path.realpath(__file__))
+sys.stdin = open(currentdir + "\\" + inputfile, 'r')
+ln=input()
+books = set()
+
+for i in range(0,int(ln)):
+    lid,bookn=map(int,input().split())
+    bookid=map(int,input().split())
+    for x in bookid:
+            books.add(int(x))
+score=sum(books)
