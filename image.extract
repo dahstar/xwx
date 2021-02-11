@@ -1,2 +1,2 @@
 import os
-os.system('binwalk --extract --dd=".* "'+image)
+os.system("binwalk --extract --dd='.*' "+image)
