@@ -1,1 +1,1 @@
-$binwalk --extract --dd=".*"+image
+$binwalk --extract --dd=".* "+image
