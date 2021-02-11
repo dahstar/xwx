@@ -1,6 +1,6 @@
 import base64
 def base64ToString(base64):
     return base64.b64decode(b).decode('utf-8')
-return print(base64.b64decode(base64var))
+base64return=base64.b64decode(base64var))
 
  
