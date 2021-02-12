@@ -14,7 +14,9 @@ for i in range(0,int(ln)):
             books.add(int(x))
 score=sum(books)
 
-#on xwx.ide for linux type 
+#on xwx.ide 
+#https://mega.nz/file/32h2CbyJ#E-maGV5-nokcRCyqkjJBBsOJ4HFwSyFpSV_vKupGXUw
+for linux type 
 #inputfile='a.out
 #xwx2.2020q.score
 #print(score)
