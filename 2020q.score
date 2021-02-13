@@ -1,22 +1,39 @@
-#find score google hashcode 2020 qualification round book  
+
 import os
 import sys
-#inputfile = 'a.out'
-currentdir = os.path.dirname(os.path.realpath(__file__))
-sys.stdin = open(currentdir + "\\" + inputfile, 'r')
-ln=input()
-books = set()
-
-for i in range(0,int(ln)):
-    lid,bookn=map(int,input().split())
-    bookid=map(int,input().split())
-    for x in bookid:
-            books.add(int(x))
-score=sum(books)
-
-#on xwx.ide 
-#https://mega.nz/file/32h2CbyJ#E-maGV5-nokcRCyqkjJBBsOJ4HFwSyFpSV_vKupGXUw
-for linux type 
-#inputfile='a.out
+def getscores(scoren):
+ scores = []	
+ for score in input().split():
+     scores.append(score)
+     if scoren==0:
+      break;
+     scoren-=1
+ return scores
+#on xwx project  
+#inputfile='a.in'
+#outputfile='a.out'
 #xwx2.2020q.score
 #print(score)
+#generate a.in and a,out from problem  pdf 	
+inputfile = 'a.in'
+currentdir = os.path.dirname(os.path.realpath(__file__))
+sys.stdin = open(currentdir + "/" + inputfile, 'r')
+scoren,ln,dayn=map(int,input().split())
+scores=getscores(scoren)
+inputfile = 'a.out'
+currentdir = os.path.dirname(os.path.realpath(__file__))
+sys.stdin = open(currentdir + "/" + inputfile, 'r')
+i=0
+ln=int(input())
+books = set()	
+for i in range(0,ln):
+  lid,bookn=map(int,input().split())
+  for book in input().split():
+     books.add(book)
+     if bookn==0:
+      break;
+     bookn-=1
+sum=0
+for book in books:
+	  sum+=int(scores[int(book)])
+print(sum) 
