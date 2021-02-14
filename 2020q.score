@@ -1,39 +1,33 @@
-
 import os
 import sys
 def getscores(scoren):
- scores = []	
+ scores = []
  for score in input().split():
-     scores.append(score)
-     if scoren==0:
-      break;
-     scoren-=1
+  scores.append(score)
+  if scoren==0: 
+   break;
+  scoren-=1
  return scores
-#on xwx project  
-#inputfile='a.in'
-#outputfile='a.out'
-#xwx2.2020q.score
-#print(score)
-#generate a.in and a,out from problem  pdf 	
 inputfile = 'a.in'
 currentdir = os.path.dirname(os.path.realpath(__file__))
 sys.stdin = open(currentdir + "/" + inputfile, 'r')
 scoren,ln,dayn=map(int,input().split())
 scores=getscores(scoren)
 inputfile = 'a.out'
-currentdir = os.path.dirname(os.path.realpath(__file__))
 sys.stdin = open(currentdir + "/" + inputfile, 'r')
 i=0
 ln=int(input())
-books = set()	
+
+books = set()
 for i in range(0,ln):
-  lid,bookn=map(int,input().split())
-  for book in input().split():
-     books.add(book)
-     if bookn==0:
-      break;
-     bookn-=1
+ lid,bookn=map(int,input().split())
+
+ for book in input().split():
+  books.add(book)
+  if bookn==0:
+   break;
+  bookn-=1
 sum=0
 for book in books:
-	  sum+=int(scores[int(book)])
-print(sum) 
+ sum+=int(scores[int(book)])
+print(sum)
