@@ -1,4 +1,4 @@
 import sys
 import os 
 currentdir = os.path.dirname(os.path.realpath(__file__))
-sys.stdin = open(currentdir+"\\"+inputfile, 'r')
+sys.stdin = open(currentdir+"/"+inputfile, 'r')
