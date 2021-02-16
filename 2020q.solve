@@ -1,0 +1,22 @@
+booksn,ln,dayn=input().split()
+bookscore=input().split()
+library=[]
+lid=0
+for i in range(0,int(ln)):
+  library.append("")
+  lbn,days,dayb=input().split()
+  dayn = int(dayn)
+  days = int(days)
+  dayb = int(dayb)
+  dayn-=days
+  books=input().split()
+  id=0
+
+  while id<len(books):
+    library[lid]+=books[id]+ " "
+    if id%dayb==0:
+        dayn-=dayb
+    if dayn<=0:
+        break;
+    id+=1
+  lid+=1
