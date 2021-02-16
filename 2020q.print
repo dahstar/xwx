@@ -1,0 +1,4 @@
+print(len(library))
+for i in range(0,len(library)):
+    print(i,len(library[i].split()))
+    print(library[i])
