@@ -1,0 +1,82 @@
+import os
+import sys
+def printknapSack(W, wt, val, n):
+    global w1,result
+    w1-=1
+    K = [[0 for w in range(W + 1)]
+         for i in range(n + 1)]
+
+    # Build table K[][] in bottom
+    # up manner
+    for i in range(n + 1):
+        for w in range(W + 1):
+            if i == 0 or w == 0:
+                K[i][w] = 0
+            elif wt[i - 1] <= w:
+                K[i][w] = max(val[i - 1]
+                              + K[i - 1][w - wt[i - 1]],
+                              K[i - 1][w])
+            else:
+                K[i][w] = K[i - 1][w]
+
+            # stores the result of Knapsack
+    res = K[n][W]
+    result+=str(res)+"\n"
+
+    w = W
+    for i in range(n, 0, -1):
+        if res <= 0:
+            break
+        # either the result comes from the
+        # top (K[i-1][w]) or from (val[i-1]
+        # + K[i-1] [w-wt[i-1]]) as in Knapsack
+        # table. If it comes from the latter
+        # one/ it means the item is included.
+        if res == K[i - 1][w]:
+            continue
+        else:
+
+            # This item is included.
+            result+=str(wt[i - 1])+" "
+            for j in range(0,wt[i-1]):
+                #print(w,sep=" ")
+                result+=str(w1)+" "
+                w1-=1
+            result+="\n"
+
+            # Since this weight is included
+            # its value is deducted
+            res = res - val[i - 1]
+            w = w - wt[i - 1]
+            #print("v",val[i - 1])
+
+        # Driver code
+        #print("r",w)
+inputfile = 'c.in'
+currentdir = os.path.dirname(os.path.realpath(__file__))
+stdin = open(currentdir + "\\" + inputfile, 'r')
+outputfile='c.out'
+sys.stdout = open(currentdir + "\\" + outputfile, 'w')
+i=0
+n,team2,team3,team4 = map(int,input().split())
+while i<n-1:
+    p = input().split()[i:n]
+    i+=n
+val = []
+wt = []
+for i in range(0,team2):
+ val.append(1)
+ wt.append(2)
+for i in range(0,team3):
+ val.append(1)
+ wt.append(3)
+for i in range(0,team4):
+ val.append(1)
+ wt.append(4)
+w= n
+w1=w
+n = len(val)
+result=""
+printknapSack(w, wt, val, n)
+print(result)
+
