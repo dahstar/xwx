@@ -5,7 +5,7 @@ How xwx working
 
  idea of xwx is is that use algorithm and codes(on this version) for communicate between peoples and 
 
-use communication for improve algorithm and codes and…
+use communication for improve algorithm and codes and communicate peoples without messaging on base of their works...
 
 in fact xwx is version of www that two x persons that dosen’t know each other and algorithm 
 
