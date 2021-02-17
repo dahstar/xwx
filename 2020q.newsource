@@ -1,0 +1,29 @@
+import os
+import sys
+
+class Book:
+    def __init__(self, bid, score):
+        self.id = bid
+        self.score = score
+class Library:
+    def __init__(self, l_id, sign_up_time, books, books_per_day):
+        self.l_id = l_id
+        self.sign_up_time = sign_up_time
+        self.books = books
+        self.books_per_day = books_per_day
+        
+
+    def addbooks(self, book):
+        self.books.append(book)
+
+    def  __gt__(self, other): 
+       if self.sign_up_time>other.self.sign_up_time:
+         return True 
+       else:
+         return False
+inputfile='f.in'
+xwx2.python.inputfile
+outputfile='f.out'
+xwx2.python.outputfile
+xwx2.2020q.solve 
+xwx2.2020q.print.library
