@@ -3,6 +3,6 @@ def base64ToString(base64):
     return base64.b64decode(b).decode('utf-8')
 result=[]
 for s in text:
- result.append(base64.b64decode(text)))
+ result.append(base64.b64decode(text))
 
  
