@@ -1,6 +1,8 @@
 import base64
 def base64ToString(base64):
     return base64.b64decode(b).decode('utf-8')
-base64return=base64.b64decode(base64var))
+result=[]
+for s in text:
+ result.append(base64.b64decode(text)))
 
  
